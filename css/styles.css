@@ -130,6 +130,15 @@ footer > section ul li{
    
 }
 
+footer > section ul li a{
+    font-family: 'Poppins',Arial;
+    color: #184967;
+    font-weight: 400;
+    padding:.25em 0;
+    text-decoration: none;
+   
+}
+
 footer > section img {
    width: 5em;
    height: auto;
