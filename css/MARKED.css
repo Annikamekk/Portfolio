@@ -1,0 +1,180 @@
+
+
+main::before{
+    opacity: 0.15;
+    background-image:none;
+}
+
+span{
+    display: block;
+    width: 90%;
+    border-top: .1em solid #194A69; 
+    margin: 1em auto; 
+}
+
+main >  section:nth-of-type(1){
+    background-image:url(../Img/MARKEDBI.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-bottom: 15em;
+}
+
+main >  section:nth-of-type(1) a{
+    color: #E5E9E9;
+    text-decoration: none;
+}
+
+main >  section:nth-of-type(1) a:visited{
+    color: #E5E9E9;
+    text-decoration: none;
+}
+
+main >  section:nth-of-type(1) a::after{
+    color: #E5E9E9;
+    content: "⬅";
+    font-size: 2em; 
+    text-decoration: none;
+}
+
+main >  section:nth-of-type(1){
+   padding: 5em;
+   padding-bottom: 15em;
+}
+
+main >  section:nth-of-type(1) h2{
+    font-family: 'Unbounded', Impact,'Arial Narrow Bold', sans-serif;
+    color: var(--white);
+    font-size: 2.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: .035em solid rgb(255, 255, 255);
+    padding-bottom: .3em;
+    width: 30%;
+
+}
+
+main >  section:nth-of-type(1) h3{
+    font-family: 'Poppins', Helvetica, sans-serif ;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: var(--white);
+    text-align: end;
+    width: 30%;
+    padding-top: .3em;
+    margin-bottom: 1em;
+}
+
+main > div{
+    display: flex;
+
+}
+
+main > div section:nth-of-type(1){
+    margin-left: 2em;   
+}
+
+
+main > div section:nth-of-type(1) h3{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    padding-bottom: .5em;
+    margin-top: 2em;
+}
+
+main > div section:nth-of-type(1) p{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 1.14em;
+    padding-bottom: 0.7em;
+    width: 90%;
+
+}
+
+main > div section:nth-of-type(2){
+    background-color: #E5E9E9;
+    border-radius: 2em;
+    padding: 2em;
+    margin-top: 4em;
+    margin-right: 5em;
+    height: 13em;
+    width: 100%;
+}
+
+main > div section:nth-of-type(2) p{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 1.3vw;
+    padding-bottom: .5em;
+}
+
+main > div section:nth-of-type(2) p strong {
+    font-family:'Unbounded', Impact,'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    color: var(--dark-blue);
+}
+
+
+main > img:nth-of-type(1){
+    width: 50%;
+    padding-left: 5em;
+}
+
+main > img:nth-of-type(2){
+    margin-top: -5em;
+    width: 49%;
+    transform:rotate(7deg);
+}
+
+@media screen and (max-width: 768px) {
+    main > section:nth-of-type(1) {
+        padding: 2em;
+        padding-bottom: 8em;
+        background-position: left;
+    }
+
+    main > div {
+        flex-direction: column;
+    }
+
+    main > div section:nth-of-type(1){
+        margin-left: .5em;   
+    }
+
+    main >  section:nth-of-type(1) h2{
+        font-size: 1.6em;
+        width: 80%;
+    }
+    main >  section:nth-of-type(1) h3{
+        font-size: 1em;
+        width: 80%; 
+}
+
+    main > div section:nth-of-type(1) {
+        padding: 2em;
+        width: 100%;
+    }
+
+    main > div section:nth-of-type(2) {
+        margin: 2em 0;
+        font-size: 1em;
+        height: 15em;
+    }
+
+    main > div section:nth-of-type(2) p{
+        font-size: 1em;
+    }
+
+    main > img:nth-of-type(1),
+    main > img:nth-of-type(2) {
+        padding: .5em;
+        width: 100%;
+        margin: 0;
+       
+    }
+
+    /* Additional responsive styles as needed */
+}

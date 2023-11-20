@@ -1,0 +1,216 @@
+main::before{
+    opacity: 0.15;
+    background-image:none;
+}
+
+main > div{
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 4em 16em;
+    padding: 3em 5em 0 5em;
+}
+ 
+main > div:nth-of-type(1) a{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    color: #000000;
+    text-decoration: none;
+}
+
+main > div:nth-of-type(1) a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+main > div:nth-of-type(1) a::after{
+    color: #000000;
+    content: "⬅";
+    font-size: 2em; 
+    text-decoration: none;
+}
+
+main > div:nth-of-type(1) section{
+    grid-row-start: 2;
+    grid-column-start: 1;
+   
+}
+
+ main >  div:nth-of-type(1) section h2{
+     font-family: 'Unbounded', Impact,'Arial Narrow Bold', sans-serif;
+     color:var(--black);
+     font-size: 2.4em;
+     font-weight: 400;
+     border-bottom: .035em solid rgb(0, 0, 0);
+     padding-bottom: .3em;
+     width: 40%;
+ 
+ }
+ 
+ main >  div:nth-of-type(1) section h3{
+     font-family: 'Poppins', Helvetica, sans-serif ;
+     font-weight: 200;
+     font-size: 1.5em;
+     color: var(--black);
+     text-align: end;
+     width: 30%;
+     padding-top: .3em;
+     margin-bottom: 1em;
+ }
+
+ main >  div:nth-of-type(1) img{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    width: 100%;
+ }
+
+
+ main > div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main > div:nth-of-type(2) section:nth-of-type(1){
+    
+    margin-top: 2em; 
+    width: 140%;
+}
+
+main > div:nth-of-type(2) section:nth-of-type(1) h3{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    padding-bottom: .5em;
+}
+
+main > div:nth-of-type(2) section:nth-of-type(1) p{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 0.7em;
+    width: 90%;
+}
+
+main > div:nth-of-type(2) section:nth-of-type(2){
+    justify-content: center;
+    background-color: #E5E9E9;
+    border-radius: 2em;
+    padding: 2em;
+    margin-top: 7em;
+    margin-right: 4em;
+    height: 15em;
+    width: 100%;
+}
+
+main > div:nth-of-type(2) section:nth-of-type(2) p{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding-bottom: .5em;
+}
+
+main > div:nth-of-type(2) section:nth-of-type(2) p strong {
+    font-family:'Unbounded', Impact,'Arial Narrow Bold', sans-serif;
+    font-size: 1.3em;
+    color: var(--dark-blue);
+}
+
+main > section h4{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--dark-blue);
+    margin-left: 2em;
+    padding-top:4em;
+}
+main > section img:nth-of-type(1){
+    width: 40%;
+    padding-left: 5em;
+}
+
+main > section img:nth-of-type(2){
+    width: 40%;
+    margin-left: 5em;
+}
+
+
+@media screen and (max-width: 768px) {
+    main > div {
+        grid-template-columns: 100%;
+        padding: 1em;
+    }
+
+    main > div:nth-of-type(1) section h2 {
+        font-size: 2em;
+        width: 80%;
+    }
+
+    main > div:nth-of-type(1) section h3 {
+        font-size: 1.2em;
+        width: 80%;
+    }
+    
+    main > div:nth-of-type(2){
+
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main > div:nth-of-type(2) section:nth-of-type(1) p {
+        font-size: 1em;
+         width: 70%; 
+    }
+
+    main > div:nth-of-type(2) section:nth-of-type(2) p {
+        font-size: 2vw;
+    }
+
+    main > div:nth-of-type(2) section:nth-of-type(2) {
+        margin: 2em 0;
+        font-size: 1em;
+        height: 13em;
+    }
+
+    main > div:nth-of-type(2) section:nth-of-type(2) p{
+        font-size: 1em;
+    }
+
+    main > section{
+        text-align: center;
+    }
+
+    main > section h4 {
+        font-size: 1.2em;
+        margin-left: 0.6em;
+    }
+
+    main >  section img{
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    main >  section img:nth-of-type(1) {
+        padding: 0;
+        width: 80%;
+        margin: 0;
+    }
+
+    main > section img:nth-of-type(2) {
+        padding: 0;
+        width: 80%;
+        margin: 0;
+    }
+
+    main > img {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        transform: none; /* Remove rotation on smaller screens */
+    }
+
+    main > img:nth-of-type(2) {
+        margin-top: 1em; /* Add some spacing between the images on smaller screens */
+    }
+}
