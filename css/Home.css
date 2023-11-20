@@ -1,5 +1,14 @@
 
-
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 main > section:nth-of-type(1){
     display: flex;
@@ -20,7 +29,7 @@ main > section:nth-of-type(1) h1{
     text-align: center;
     align-self: center;
     padding-top: 2em;
-   
+    animation: slideUp 1.4s ease-in-out; 
 }
 
 main > section:nth-of-type(1) p{
@@ -32,100 +41,100 @@ main > section:nth-of-type(1) p{
     color: var(--dark-blue);
     text-align: center;
     padding-bottom: 4em;
-   
+    animation: slideUp 1.4s ease-in-out; 
 }
 
 
 @keyframes fishfor1 {
-    0% { translate: -5vw 0em; rotate: 0deg;}
+    0% { translate: 0vw 0em; rotate: 0deg;}
     20%{ rotate: 0;}
     24%{rotate: 0deg;}
     25% { translate: -80vw 0em; rotate: -90deg; }
     49%{rotate: -90deg;}
     50%{ translate: -80vw 25em; rotate: 0deg; }
     74%{rotate: 0deg;}
-    75%{ translate: -5vw 25em; rotate: -90deg;}
+    75%{ translate: 0vw 25em; rotate: -90deg;}
     99%{rotate:-90deg;}
-    100%{ translate: -5vw 0em; rotate: 0deg;}
+    100%{ translate: 0vw 0em; rotate: 0deg;}
 }
 
 @keyframes fishfor2 {
-    0%  { translate: 5vw 0em; rotate: -90deg; }
+    0%  { translate: 0vw 0em; rotate: -90deg; }
     24%{rotate: -90deg;}
-    25% { translate: 5vw 25em; rotate: 0deg; }
+    25% { translate: 0vw 25em; rotate: 0deg; }
     49%{rotate: 0deg;}
     50%{ translate: 80vw 25em; rotate: -90deg; }
     74%{rotate: -90deg;}
     75%{ translate: 80vw 0em; rotate: 0deg;}
     99%{rotate:0deg;}
-    100%{ translate: 5vw 0em; rotate: -90deg;}
+    100%{ translate: 0vw 0em; rotate: -90deg;}
 }
 
 @keyframes fishfor3 {
-    0% { translate: 5vw 0em; rotate: 0deg;}
+    0% { translate: 0vw 0em; rotate: 0deg;}
     20%{ rotate: 0;}
     24%{rotate: 0deg;}
     25% { translate: 80vw 0em; rotate: -90deg; }
     49%{rotate: -90deg;}
     50%{ translate: 80vw -25em; rotate: 0deg; }
     74%{rotate: 0deg;}
-    75%{ translate: 5vw -25em; rotate: -90deg;}
+    75%{ translate: 0vw -25em; rotate: -90deg;}
     99%{rotate:-90deg;}
-    100%{ translate: 5vw 0em; rotate: 0deg;}
+    100%{ translate: 0vw 0em; rotate: 0deg;}
 }
 
 @keyframes fishfor4 {
-    0% { translate: -5vw 0em; rotate: -90deg;}
+    0% { translate: 0vw 0em; rotate: -90deg;}
     24%{rotate: -90deg;}
-    25% { translate: -5vw -25em; rotate: 0deg; }
+    25% { translate: 0vw -25em; rotate: 0deg; }
     49%{rotate: 0deg;}
     50%{ translate: -80vw -25em; rotate: -90deg; }
     74%{rotate: -90deg;}
     75%{ translate: -80vw 0em; rotate: 0deg;}
     99%{rotate:0deg;}
-    100%{ translate: -5vw 0em; rotate: -90deg;}
+    100%{ translate: 0vw 0em; rotate: -90deg;}
 }
-
 
 
 main > section:nth-of-type(1) span:nth-of-type(1){
     position: absolute;
     top: 0;
-    right: 4em;
+    right: 7em;
     display: block;
     width: 3em;
     border-top: .3em solid #196960; 
     animation: fishfor1 12s infinite;
+    
 }
 
 main > section:nth-of-type(1) span:nth-of-type(2){
     position: absolute;
     top: 0;
-    left: 4em;
+    left: 7em;
     display: block;
     width: 3em;
     border-top: .3em solid #196960; 
-    animation: fishfor2 12s infinite;
+    animation: fishfor2 12s  infinite;
 }
 
 main > section:nth-of-type(1) span:nth-of-type(3){
     position: absolute;
     bottom: 0;
-    left: 4em;
+    left: 7em;
     display: block;
     width: 3em;
     border-top: .3em solid #196960; 
-    animation: fishfor3 12s infinite;
+    animation: fishfor3 12s  infinite;
 }
 
 main > section:nth-of-type(1) span:nth-of-type(4){
     position: absolute;
     bottom: 0;
-    right: 4em;
+    right: 7em;
     display: block;
     width: 3em;
     border-top: .3em solid #196960; 
-    animation: fishfor4 12s infinite;
+    animation: fishfor4 12s  infinite;
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -136,8 +145,6 @@ main > section:nth-of-type(1) span:nth-of-type(4){
 		animation:unset;
 	}
 }
-
-
 
 
 main > section:nth-of-type(2){
@@ -152,6 +159,7 @@ main > section:nth-of-type(2){
     margin-top: 5em;
     margin-left: 2em;
     z-index: 2;
+    animation: slideUp 1.4s ease-in-out ;
   
     
 }

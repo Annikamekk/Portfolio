@@ -105,6 +105,11 @@ main > div section:nth-of-type(2){
     width: 100%;
 }
 
+main > div section:nth-of-type(2) h3{
+    display:   none;
+    font-size: .1em;
+}
+
 main > div section:nth-of-type(2) p{
     font-family: 'Poppins', Helvetica, sans-serif;
     font-size: 1.3vw;
@@ -151,7 +156,7 @@ main > img:nth-of-type(2){
     main >  section:nth-of-type(1) h3{
         font-size: 1em;
         width: 80%; 
-}
+    }
 
     main > div section:nth-of-type(1) {
         padding: 2em;
@@ -175,6 +180,4 @@ main > img:nth-of-type(2){
         margin: 0;
        
     }
-
-    /* Additional responsive styles as needed */
 }

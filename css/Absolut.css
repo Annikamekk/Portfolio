@@ -9,6 +9,21 @@ main::before{
     background-image:none;
 }
 
+@keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
+
 main >  section:nth-of-type(1){
     background-image:url(../Img/ABSOLUTbi.png);
     background-position: center;
@@ -123,6 +138,11 @@ main > div section:nth-of-type(2){
     margin-right: 4em;
     height: 15em;
     width: 100%;
+}
+
+main > div section:nth-of-type(2) h3{
+    display: none;
+    font-size: .1em;
 }
 
 main > div section:nth-of-type(2) p{

@@ -114,6 +114,11 @@ footer > section{
     justify-content: space-between;
 }
 
+footer > section h4{
+    font-size: .2em;
+    display: none;
+}
+
 footer > section ul{
     list-style: none;
     color: var(--dark-blue);

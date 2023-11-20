@@ -4,6 +4,18 @@
    
 }
 
+@keyframes slideUp {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
 main::before{
     opacity: 0.15;
 }
@@ -11,7 +23,7 @@ main::before{
     display: flex;
     flex-direction: row;
     align-items: center;
-   
+    animation: slideUp 1.4s ease-in-out; 
  }
 
  main > div a:nth-of-type(1){
@@ -19,7 +31,6 @@ main::before{
     text-decoration: none;
     height:2em;
     margin-left: -2em;
-    
 }
 
 main > div a:nth-of-type(1):visited{
@@ -35,6 +46,11 @@ main > div a:nth-of-type(1)::after{
     text-decoration: none;
 }
 
+
+div > section:nth-of-type(1){
+    margin-top: 1em;
+}
+
  div > section:nth-of-type(1) h2{
     display: none;
     font-size: 1.3em;
@@ -42,8 +58,9 @@ main > div a:nth-of-type(1)::after{
 
  div > section:nth-of-type(1) p{
     font-family: 'Poppins', Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 1em;
+
     margin-left: 10%;
     width: 75%;
 }
@@ -81,14 +98,14 @@ main > div a:nth-of-type(2):visited{
 }
 
 div > img{
-   
-    margin-top: 1em;
-    height: 27em;
+    height: 30em;
     margin-right: 7em;
-    align-self: center;
-    border-radius: 15em 15em 0 0;
-  
+    transition: opacity 0.3s ease-in-out;
 }
+
+  div > img:hover {
+    opacity: 0;
+  }
 
 main > section:nth-of-type(1){
     display: grid;
