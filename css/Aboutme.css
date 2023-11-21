@@ -100,12 +100,7 @@ main > div a:nth-of-type(2):visited{
 div > img{
     height: 30em;
     margin-right: 7em;
-    transition: opacity 0.3s ease-in-out;
 }
-
-  div > img:hover {
-    opacity: 0;
-  }
 
 main > section:nth-of-type(1){
     display: grid;
