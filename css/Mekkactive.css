@@ -161,7 +161,6 @@ main > section img:nth-of-type(2){
      }
 
     main > div:nth-of-type(2){
-
         flex-direction: column;
         width: 100%;
     }
