@@ -1,13 +1,4 @@
 
-nav ul li{
-    font-weight: 100;
-}
-
-
-main::before{
-    opacity: 0.15;
-    background-image:none;
-}
 
 @keyframes slideUp {
     0%,

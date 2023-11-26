@@ -1,9 +1,4 @@
 
-main::before{
-    opacity: 0.15;
-    background-image:none;
-}
-
 main >  section:nth-of-type(1){
     background-image:url(../Img/annikasBI.png);
     background-position: end;

@@ -15,10 +15,6 @@
     }
   }
 
-
-main::before{
-    opacity: 0.15;
-}
  main > div{
     display: flex;
     flex-direction: row;
@@ -59,7 +55,7 @@ div > section:nth-of-type(1){
  div > section:nth-of-type(1) p{
     font-family: 'Poppins', Helvetica, sans-serif;
     font-size: 1em;
-    padding: .5 em;
+    padding: 1em;
     margin-left: 10%;
     width: 75%;
 }
